@@ -1,0 +1,100 @@
+{
+  "name": "node-file-system",
+  "version": "0.1.0",
+  "description": "TODO.",
+  "license": "ISC",
+  "author": "cheap glitch <cheap.glitch@gmail.com> (https://github.com/cheap-glitch)",
+  "repository": "cheap-glitch/node-file-system",
+  "homepage": "https://github.com/cheap-glitch/node-file-system#readme",
+  "bugs": "https://github.com/cheap-glitch/node-file-system/issues",
+  "funding": "https://github.com/sponsors/cheap-glitch",
+  "keywords": [
+    "basename",
+    "directory",
+    "entries",
+    "esm",
+    "file",
+    "filename",
+    "filesystem",
+    "folder",
+    "fs",
+    "node",
+    "path",
+    "read",
+    "temporaray",
+    "tmp",
+    "tree",
+    "write"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "exports": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:clean": "empty-dir dist && npm run build",
+    "build:watch": "tsc --watch",
+    "coverage": "npm test -- --collectCoverage",
+    "coverage:upload": "coveralls < .coverage/lcov.info",
+    "lint": "eslint . --ext .ts --ignore-path .gitignore",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "@cheap-glitch/typescript",
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "unicorn/prefer-module": "error",
+      "unicorn/prefer-node-protocol": "error"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.test.ts"
+        ],
+        "rules": {
+          "jest/consistent-test-it": ["warn", {
+            "withinDescribe": "test"
+          }]
+        }
+      }
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest/presets/default-esm",
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    },
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    },
+    "coverageDirectory": ".coverage"
+  },
+  "devDependencies": {
+    "@cheap-glitch/eslint-config-typescript": "^2.4.3",
+    "@cheap-glitch/tsconfig": "^1.0.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^17.0.29",
+    "cross-env": "^7.0.3",
+    "empty-dir-cli": "^1.0.2",
+    "eslint": "^8.14.0",
+    "jest": "^27.0.2",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}

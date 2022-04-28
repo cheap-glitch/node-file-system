@@ -1,0 +1,7 @@
+*.env
+/.coverage/
+/.coveralls.yml
+/.npmrc
+/dist/
+/node_modules/
+/test/fixtures/*

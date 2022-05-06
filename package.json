@@ -1,7 +1,7 @@
 {
   "name": "node-file-system",
   "version": "0.1.0",
-  "description": "TODO.",
+  "description": "Tiny convenience wrapper around Node.js file system APIs.",
   "license": "ISC",
   "author": "cheap glitch <cheap.glitch@gmail.com> (https://github.com/cheap-glitch)",
   "repository": "cheap-glitch/node-file-system",
@@ -21,7 +21,7 @@
     "node",
     "path",
     "read",
-    "temporaray",
+    "temporary",
     "tmp",
     "tree",
     "write"

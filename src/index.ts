@@ -2,7 +2,7 @@
  *!
  * node-file-system
  *
- * TODO.
+ * Tiny convenience wrapper around Node.js file system APIs.
  *
  * Copyright (c) 2022-present, cheap glitch
  *

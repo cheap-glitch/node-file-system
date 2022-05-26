@@ -1,5 +1,5 @@
 {
-  "name": "node-file-system",
+  "name": "@cheap-glitch/node-file-system",
   "version": "0.1.0",
   "description": "Tiny convenience wrapper around Node.js file system APIs.",
   "license": "ISC",

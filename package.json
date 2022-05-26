@@ -1,6 +1,6 @@
 {
   "name": "@cheap-glitch/node-file-system",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Tiny convenience wrapper around Node.js file system APIs.",
   "license": "ISC",
   "author": "cheap glitch <cheap.glitch@gmail.com> (https://github.com/cheap-glitch)",
@@ -65,9 +65,12 @@
           "*.test.ts"
         ],
         "rules": {
-          "jest/consistent-test-it": ["warn", {
-            "withinDescribe": "test"
-          }]
+          "jest/consistent-test-it": [
+            "warn",
+            {
+              "withinDescribe": "test"
+            }
+          ]
         }
       }
     ]

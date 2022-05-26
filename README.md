@@ -19,7 +19,7 @@ expressive interface to the file system across various projects.
 ## Installation
 
 ```
-npm i node-file-system
+npm i @cheap-glitch/node-file-system
 ```
 
 ## Usage
